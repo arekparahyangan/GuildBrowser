@@ -63,6 +63,8 @@
 		D10693E517F90B6B00D82905 /* guild.json in Resources */ = {isa = PBXBuildFile; fileRef = D10693E317F90B6B00D82905 /* guild.json */; };
 		D10693E717F90BF000D82905 /* CharacterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D10693E617F90BF000D82905 /* CharacterTests.m */; };
 		D1E3294F17F9863D00A7E190 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E3294717F9863D00A7E190 /* libOCMock.a */; };
+		D1E3295117F9886100A7E190 /* GuildTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E3295017F9886100A7E190 /* GuildTests.m */; };
+		D1E3295417F988D200A7E190 /* TestSemaphor.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E3295317F988D200A7E190 /* TestSemaphor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +171,9 @@
 		D1E3294C17F9863D00A7E190 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
 		D1E3294D17F9863D00A7E190 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		D1E3294E17F9863D00A7E190 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		D1E3295017F9886100A7E190 /* GuildTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuildTests.m; sourceTree = "<group>"; };
+		D1E3295217F988D200A7E190 /* TestSemaphor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSemaphor.h; sourceTree = "<group>"; };
+		D1E3295317F988D200A7E190 /* TestSemaphor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSemaphor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,9 +386,12 @@
 		D10693D117F903E300D82905 /* GuildBrowserLogicTests */ = {
 			isa = PBXGroup;
 			children = (
+				D1E3295217F988D200A7E190 /* TestSemaphor.h */,
+				D1E3295317F988D200A7E190 /* TestSemaphor.m */,
 				D10693D217F903E300D82905 /* Supporting Files */,
 				D10693DF17F9043200D82905 /* WowUtilsTests.m */,
 				D10693E617F90BF000D82905 /* CharacterTests.m */,
+				D1E3295017F9886100A7E190 /* GuildTests.m */,
 			);
 			path = GuildBrowserLogicTests;
 			sourceTree = "<group>";
@@ -578,8 +586,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E3295417F988D200A7E190 /* TestSemaphor.m in Sources */,
 				D10693E017F9043200D82905 /* WowUtilsTests.m in Sources */,
 				D10693E717F90BF000D82905 /* CharacterTests.m in Sources */,
+				D1E3295117F9886100A7E190 /* GuildTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
