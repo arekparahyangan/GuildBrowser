@@ -14,10 +14,6 @@
 		CB9FDC4C15E9872D00B3713E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDC4B15E9872D00B3713E /* main.m */; };
 		CB9FDC5015E9872D00B3713E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDC4F15E9872D00B3713E /* AppDelegate.m */; };
 		CB9FDC5315E9872D00B3713E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9FDC5115E9872D00B3713E /* MainStoryboard.storyboard */; };
-		CB9FDC5F15E9872E00B3713E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC3F15E9872D00B3713E /* UIKit.framework */; };
-		CB9FDC6015E9872E00B3713E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC4115E9872D00B3713E /* Foundation.framework */; };
-		CB9FDC6815E9872E00B3713E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB9FDC6615E9872E00B3713E /* InfoPlist.strings */; };
-		CB9FDC6B15E9872E00B3713E /* GuildBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDC6A15E9872E00B3713E /* GuildBrowserTests.m */; };
 		CB9FDCD715E9A8DA00B3713E /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDCC315E9A8DA00B3713E /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CB9FDCD815E9A8DA00B3713E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDCC515E9A8DA00B3713E /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CB9FDCD915E9A8DA00B3713E /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9FDCC715E9A8DA00B3713E /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -66,16 +62,10 @@
 		D10693E417F90B6B00D82905 /* character.json in Resources */ = {isa = PBXBuildFile; fileRef = D10693E217F90B6B00D82905 /* character.json */; };
 		D10693E517F90B6B00D82905 /* guild.json in Resources */ = {isa = PBXBuildFile; fileRef = D10693E317F90B6B00D82905 /* guild.json */; };
 		D10693E717F90BF000D82905 /* CharacterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D10693E617F90BF000D82905 /* CharacterTests.m */; };
+		D1E3294F17F9863D00A7E190 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E3294717F9863D00A7E190 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CB9FDC6115E9872E00B3713E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB9FDC3215E9872D00B3713E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CB9FDC3A15E9872D00B3713E;
-			remoteInfo = GuildBrowser;
-		};
 		D10693DA17F903E300D82905 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB9FDC3215E9872D00B3713E /* Project object */;
@@ -97,7 +87,6 @@
 		CB9FDC4E15E9872D00B3713E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB9FDC4F15E9872D00B3713E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CB9FDC5215E9872D00B3713E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CB9FDC5C15E9872E00B3713E /* GuildBrowserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuildBrowserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9FDC6515E9872E00B3713E /* GuildBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GuildBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		CB9FDC6715E9872E00B3713E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB9FDC6915E9872E00B3713E /* GuildBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuildBrowserTests.h; sourceTree = "<group>"; };
@@ -173,6 +162,13 @@
 		D10693E217F90B6B00D82905 /* character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = character.json; sourceTree = "<group>"; };
 		D10693E317F90B6B00D82905 /* guild.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guild.json; sourceTree = "<group>"; };
 		D10693E617F90BF000D82905 /* CharacterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTests.m; sourceTree = "<group>"; };
+		D1E3294717F9863D00A7E190 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		D1E3294917F9863D00A7E190 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		D1E3294A17F9863D00A7E190 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		D1E3294B17F9863D00A7E190 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		D1E3294C17F9863D00A7E190 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		D1E3294D17F9863D00A7E190 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		D1E3294E17F9863D00A7E190 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,19 +182,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB9FDC5815E9872E00B3713E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB9FDC5F15E9872E00B3713E /* UIKit.framework in Frameworks */,
-				CB9FDC6015E9872E00B3713E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D10693CA17F903E300D82905 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E3294F17F9863D00A7E190 /* libOCMock.a in Frameworks */,
 				D10693D017F903E300D82905 /* UIKit.framework in Frameworks */,
 				D10693CF17F903E300D82905 /* Foundation.framework in Frameworks */,
 			);
@@ -210,6 +198,7 @@
 		CB9FDC3015E9872D00B3713E = {
 			isa = PBXGroup;
 			children = (
+				D1E3294617F9863D00A7E190 /* OCMock */,
 				CB9FDCEC15E9B31400B3713E /* images */,
 				CB9FDCC115E9A8DA00B3713E /* AFNetworking */,
 				CB9FDC4515E9872D00B3713E /* GuildBrowser */,
@@ -224,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				CB9FDC3B15E9872D00B3713E /* GuildBrowser.app */,
-				CB9FDC5C15E9872E00B3713E /* GuildBrowserTests.octest */,
 				D10693CD17F903E300D82905 /* GuildBrowserLogicTests.xctest */,
 			);
 			name = Products;
@@ -421,6 +409,28 @@
 			path = ../GuildBrowser/testdata;
 			sourceTree = "<group>";
 		};
+		D1E3294617F9863D00A7E190 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				D1E3294717F9863D00A7E190 /* libOCMock.a */,
+				D1E3294817F9863D00A7E190 /* OCMock */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		D1E3294817F9863D00A7E190 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				D1E3294917F9863D00A7E190 /* NSNotificationCenter+OCMAdditions.h */,
+				D1E3294A17F9863D00A7E190 /* OCMArg.h */,
+				D1E3294B17F9863D00A7E190 /* OCMConstraint.h */,
+				D1E3294C17F9863D00A7E190 /* OCMock.h */,
+				D1E3294D17F9863D00A7E190 /* OCMockObject.h */,
+				D1E3294E17F9863D00A7E190 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,25 +450,6 @@
 			productName = GuildBrowser;
 			productReference = CB9FDC3B15E9872D00B3713E /* GuildBrowser.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CB9FDC5B15E9872E00B3713E /* GuildBrowserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB9FDC7115E9872E00B3713E /* Build configuration list for PBXNativeTarget "GuildBrowserTests" */;
-			buildPhases = (
-				CB9FDC5715E9872E00B3713E /* Sources */,
-				CB9FDC5815E9872E00B3713E /* Frameworks */,
-				CB9FDC5915E9872E00B3713E /* Resources */,
-				CB9FDC5A15E9872E00B3713E /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CB9FDC6215E9872E00B3713E /* PBXTargetDependency */,
-			);
-			name = GuildBrowserTests;
-			productName = GuildBrowserTests;
-			productReference = CB9FDC5C15E9872E00B3713E /* GuildBrowserTests.octest */;
-			productType = "com.apple.product-type.bundle";
 		};
 		D10693CC17F903E300D82905 /* GuildBrowserLogicTests */ = {
 			isa = PBXNativeTarget;
@@ -505,7 +496,6 @@
 			projectRoot = "";
 			targets = (
 				CB9FDC3A15E9872D00B3713E /* GuildBrowser */,
-				CB9FDC5B15E9872E00B3713E /* GuildBrowserTests */,
 				D10693CC17F903E300D82905 /* GuildBrowserLogicTests */,
 			);
 		};
@@ -541,14 +531,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB9FDC5915E9872E00B3713E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB9FDC6815E9872E00B3713E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D10693CB17F903E300D82905 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -560,22 +542,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CB9FDC5A15E9872E00B3713E /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB9FDC3715E9872D00B3713E /* Sources */ = {
@@ -608,14 +574,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB9FDC5715E9872E00B3713E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB9FDC6B15E9872E00B3713E /* GuildBrowserTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D10693C917F903E300D82905 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -628,11 +586,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CB9FDC6215E9872E00B3713E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CB9FDC3A15E9872D00B3713E /* GuildBrowser */;
-			targetProxy = CB9FDC6115E9872E00B3713E /* PBXContainerItemProxy */;
-		};
 		D10693DB17F903E300D82905 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CB9FDC3A15E9872D00B3713E /* GuildBrowser */;
@@ -748,40 +701,6 @@
 			};
 			name = Release;
 		};
-		CB9FDC7215E9872E00B3713E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GuildBrowser.app/GuildBrowser";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GuildBrowser/GuildBrowser-Prefix.pch";
-				INFOPLIST_FILE = "GuildBrowserTests/GuildBrowserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		CB9FDC7315E9872E00B3713E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GuildBrowser.app/GuildBrowser";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GuildBrowser/GuildBrowser-Prefix.pch";
-				INFOPLIST_FILE = "GuildBrowserTests/GuildBrowserTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 		D10693DC17F903E300D82905 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -810,8 +729,26 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/OCMock/OCMock",
+					"$(SRCROOT)/OCMock",
+				);
 				INFOPLIST_FILE = "GuildBrowserLogicTests/GuildBrowserLogicTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sofyan/Documents/Development/Dev\\ Resources/iOS_5_and_6_By_Tutorials_Bundle/iOS\\ 6\\ By\\ Tutorials/Automated\\ Testing/Intermediate\\ Automated\\ Testing\\ with\\ Xcode/GuildBrowser\\ -\\ Working/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-force_load",
+					"\"$(SRCROOT)/OCMock/libOCMock.a\"",
+					"-objC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -842,8 +779,26 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/OCMock/OCMock",
+					"$(SRCROOT)/OCMock",
+				);
 				INFOPLIST_FILE = "GuildBrowserLogicTests/GuildBrowserLogicTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sofyan/Documents/Development/Dev\\ Resources/iOS_5_and_6_By_Tutorials_Bundle/iOS\\ 6\\ By\\ Tutorials/Automated\\ Testing/Intermediate\\ Automated\\ Testing\\ with\\ Xcode/GuildBrowser\\ -\\ Working/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-force_load",
+					"\"$(SRCROOT)/OCMock/libOCMock.a\"",
+					"-objC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -870,15 +825,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB9FDC7115E9872E00B3713E /* Build configuration list for PBXNativeTarget "GuildBrowserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB9FDC7215E9872E00B3713E /* Debug */,
-				CB9FDC7315E9872E00B3713E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D10693DE17F903E300D82905 /* Build configuration list for PBXNativeTarget "GuildBrowserLogicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -886,6 +832,7 @@
 				D10693DD17F903E300D82905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
