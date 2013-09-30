@@ -65,6 +65,8 @@
 		D10693D017F903E300D82905 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC3F15E9872D00B3713E /* UIKit.framework */; };
 		D10693D617F903E300D82905 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D10693D417F903E300D82905 /* InfoPlist.strings */; };
 		D10693E017F9043200D82905 /* WowUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D10693DF17F9043200D82905 /* WowUtilsTests.m */; };
+		D10693E417F90B6B00D82905 /* character.json in Resources */ = {isa = PBXBuildFile; fileRef = D10693E217F90B6B00D82905 /* character.json */; };
+		D10693E517F90B6B00D82905 /* guild.json in Resources */ = {isa = PBXBuildFile; fileRef = D10693E317F90B6B00D82905 /* guild.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +172,8 @@
 		D10693D517F903E300D82905 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D10693D917F903E300D82905 /* GuildBrowserLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuildBrowserLogicTests-Prefix.pch"; sourceTree = "<group>"; };
 		D10693DF17F9043200D82905 /* WowUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WowUtilsTests.m; sourceTree = "<group>"; };
+		D10693E217F90B6B00D82905 /* character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = character.json; sourceTree = "<group>"; };
+		D10693E317F90B6B00D82905 /* guild.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guild.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,11 +406,22 @@
 		D10693D217F903E300D82905 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D10693E117F90B6B00D82905 /* testdata */,
 				D10693D317F903E300D82905 /* GuildBrowserLogicTests-Info.plist */,
 				D10693D417F903E300D82905 /* InfoPlist.strings */,
 				D10693D917F903E300D82905 /* GuildBrowserLogicTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D10693E117F90B6B00D82905 /* testdata */ = {
+			isa = PBXGroup;
+			children = (
+				D10693E217F90B6B00D82905 /* character.json */,
+				D10693E317F90B6B00D82905 /* guild.json */,
+			);
+			name = testdata;
+			path = ../GuildBrowser/testdata;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -542,6 +557,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10693D617F903E300D82905 /* InfoPlist.strings in Resources */,
+				D10693E517F90B6B00D82905 /* guild.json in Resources */,
+				D10693E417F90B6B00D82905 /* character.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
