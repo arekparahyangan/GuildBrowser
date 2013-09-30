@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Charlie Fulton. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 #import "WoWUtils.h"
 
-@interface WowUtilsTests : SenTestCase
+@interface WowUtilsTests : XCTestCase
 
 @end
 
@@ -35,24 +35,24 @@
 // 1
 -(void)testCharacterClassNameLookup {
     // 2
-    STAssertEqualObjects(@"Warrior", [WoWUtils classFromCharacterType:1], @"ClassType should be Warrior");
+    XCTAssertEqualObjects(@"Warrior", [WoWUtils classFromCharacterType:1], @"ClassType should be Warrior");
     // 3
-    STAssertFalse([@"Mage" isEqualToString:[WoWUtils classFromCharacterType:2]], nil);
+    XCTAssertFalse([@"Mage" isEqualToString:[WoWUtils classFromCharacterType:2]]);
     // 4
-    STAssertTrue([@"Paladin" isEqualToString:[WoWUtils classFromCharacterType:2]], nil);
+    XCTAssertTrue([@"Paladin" isEqualToString:[WoWUtils classFromCharacterType:2]]);
     // add the rest as an exercise
 }
 
 - (void)testRaceTypeLookup {
-    STAssertEqualObjects(@"Human", [WoWUtils raceFromRaceType:1], nil);
-    STAssertEqualObjects(@"Orc", [WoWUtils raceFromRaceType:2], nil);
-    STAssertFalse([@"Night Elf" isEqualToString:[WoWUtils raceFromRaceType:45]],nil);
+    XCTAssertEqualObjects(@"Human", [WoWUtils raceFromRaceType:1]);
+    XCTAssertEqualObjects(@"Orc", [WoWUtils raceFromRaceType:2]);
+    XCTAssertFalse([@"Night Elf" isEqualToString:[WoWUtils raceFromRaceType:45]]);
     // add the rest as an exercise
 }
 
 - (void)testQualityLookup {
-    STAssertEqualObjects(@"Grey", [WoWUtils qualityFromQualityType:1], nil);
-    STAssertFalse([@"Purple" isEqualToString:[WoWUtils qualityFromQualityType:10]],nil);
+    XCTAssertEqualObjects(@"Grey", [WoWUtils qualityFromQualityType:1]);
+    XCTAssertFalse([@"Purple" isEqualToString:[WoWUtils qualityFromQualityType:10]]);
     // add the rest as an exercise
 }
 
